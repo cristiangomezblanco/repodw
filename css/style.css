@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(237, 238, 243);
+    width: 100%;
+}
+body{
+    background-color: rgb(237, 238, 243);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+table{
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: larger;
+    width: 100%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+ul{
+    list-style-type: upper-roman;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+}
+nav li{
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+}
+nav {
+    background-color: white;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+footer{
+    background-color: white;
+}
+
+img{
+    width: 100%;
+}
+
+#botonera{
+    display: flex;
+    text-align: center;
+    height: auto;
+}
+
+#slider1{
+    height: auto;
+}
+
+#carrusel{
+    height: 200px;
+    width: 100%;
+    animation-name: carrusel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#novedades{
+    background-color: violet;
+}
+
+#actividades{
+    background-color: tomato;
+}
+
+@keyframes carrusel {
+    0%{
+        transform: translate(20%);
+    }
+    25%{
+        transform: translate(40%);
+    }
+    50%{
+        transform: translate(60%);
+    }
+    75%{
+        transform: translate(80%)
+    }
+    100%{
+        transform: translate(100%)
+    }
+}
+
+@media only screen and (max-width: 600px){
+    h1{
+        color: blue;
+    }
+    #home{
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-widht: 600px){
+    footer{
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-widht: 992PX) {
+    footer{
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
